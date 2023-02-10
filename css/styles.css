@@ -9,7 +9,16 @@
     --our-team-bg-color:#F4F4FD;
     --brand-color-white:#F4F4FD;
 }
+h1,h2,h3,h4,h4,h6,p,a{
+    margin:0;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
+}
 .header-border{
     border-bottom: 1px solid var(--border-color);}
 .logo-studio-color{color:var(--main-text-color);}
@@ -22,16 +31,36 @@ text-decoration: none;
 text-transform: uppercase;}
 
 .header-link {
+   
     font-weight: 500;
     font-size: 16px;
     line-height:1.5;
 letter-spacing: 0.02em;
 color:var(--main-text-color);
  text-decoration: none;
+
 }
 .header-list{
+    display:flex;
     list-style-type: none;
 }
+.header-list .item:not(:last-child){
+
+    margin-right:40px;
+}
+
+.adress-list .item:not(:last-child) {
+
+    margin-right: 40px;
+}
+/* main nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+
 .header-link:hover,:focus{color:var(--hover-color);}
 /* main styles */
 body{background-color:var(--body-bg-color);
@@ -48,7 +77,14 @@ body{background-color:var(--body-bg-color);
 color:var(--text-color);
 letter-spacing: 0.02em;
 }
-.adress-list{list-style-type: none;}
+.adress-list{
+    display: flex;
+    list-style-type: none;
+        margin-left:auto;}
+
+    /* .adress-list .item{
+        margin-right: 20px;
+    } */
 
 .adress-link:hover,:focus{color:var(--hover-color);}
 
@@ -60,11 +96,9 @@ list-style: none;
         font-size: 16px;
         line-height: 1.5;
         color:var(--brand-color);
-        border: 1px solid color:var(--border-color);
+         border: 1px solid color var(--border-color);
             border-radius:4px;
-            letter-spacing: 0.04em;
-
- }
+            letter-spacing:0.04em;}
  .portfolio-button:hover{background-color:var(--hover-color);
 color:var(--body-bg-color);
 cursor: pointer;}
@@ -100,13 +134,24 @@ color: var(--white-text-color);}
             color:var(--brand-color-white)
 }
 .social-links:hover{color:var(--hover-color);}
-.hero-section{
+.hero .container {
+
+        width: 1158px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+            text-align: center;
+
+    
+}
+.hero-title{
     font-weight: 700;
     font-size: 56px;
     line-height:1.07;
 color:var(--body-bg-color);
-letter-spacing: 0.02em;
+letter-spacing: 2%;
 background:var(--second-background-color);
+margin-bottom: 48px;
 }
 .order-button{
     background-color:var(--brand-color);
@@ -120,8 +165,8 @@ background:var(--second-background-color);
 
 }
 .order-button:hover{background: var(--hover-color);}
-.section-items{list-style: none;}
-.card-title{font-weight: 500;
+.main-list{list-style: none;}
+.list-title{font-weight: 500;
     font-size: 20px;
     line-height:1.2;
 letter-spacing: 0.02em;
