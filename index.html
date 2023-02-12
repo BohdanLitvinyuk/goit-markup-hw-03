@@ -22,39 +22,43 @@
   </head>
   <body>
     <header class="header-border">
-      <nav class="container main-nav">
+      <div class="header-section container">
+        <!-- nav block -->
         <a href="./index.html" class="logo-web"
           >Web<span class="logo-studio-color">Studio</span></a
         >
-        <ul class="header-list">
-          <li class="item">
-            <a href="./index.html" class="header-link">Studio</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="header-link">Portfolio</a>
-          </li>
-          <li class="item"><a href="" class="header-link">Contacts</a></li>
-        </ul>
-        <!-- <address> -->
-        <ul class="adress-list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="adress-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+110001111111" class="adress-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-        <!-- </address> -->
-      </nav>
+        <nav>
+          <ul class="header-list">
+            <li class="item">
+              <a href="./index.html" class="header-link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="header-link">Portfolio</a>
+            </li>
+            <li class="item"><a href="" class="header-link">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="adress-section">
+          <ul class="adress-list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="adress-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+110001111111" class="adress-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <!-- Address block -->
     </header>
     <main>
       <!-- hero section -->
-      <section class="hero">
-        <div class="container">
+      <section class="hero-section">
+        <div class=" hero container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="order-button">Order Service</button>
         </div>
@@ -95,18 +99,18 @@
           </ul>
         </div>
       </section>
-      <section class="images-section">
-        <div class="images-section container">
-          <h2 class="section-title">What are we doing</h2>
-          <ul class="section-list">
+      <section class="examples-section">
+        <div class="examples container">
+          <h2 class="examples-section-title">What are we doing</h2>
+          <ul class="examples-list">
             <li class="item">
-              <img src="./images/desktop.jpg" alt="desktop" width="360" />
+              <img src="./images/desktop.jpg" alt="desktop" width="360" class="examples-images"/>
             </li>
             <li class="item">
-              <img src="./images/mobile.jpg" alt="mobile" width="360" />
+              <img src="./images/mobile.jpg" alt="mobile" width="360" class="examples-images" />
             </li>
             <li class="item">
-              <img src="./images/blended.jpg" alt="blended" width="360" />
+              <img src="./images/blended.jpg" alt="blended" width="360" class="examples-images" />
             </li>
           </ul>
         </div>
@@ -114,56 +118,59 @@
       <!-- OUR TEAM SECTION -->
       <section class="section-our-team">
         <div class="our-team container">
-<h2 class="section-title">Our Team</h2>
-        <ul class="team-list">
-          <li class="team-items">
-            <img
-              src="./images/mark-guerrero.jpg"
-              alt="photo-Mark-Guerrero"
-              width="264"
-            />
-            <h3 class="card-title">Mark Guerrero</h3>
-            <p class="article-text">Product Designer</p>
-          </li>
-          <li class="team-items">
-            <img src="./images/tom-ford.jpg" alt="photo-tom-ford" width="264" />
-            <h3 class="card-title">Tom Ford</h3>
-            <p class="article-text">Frontend Developer</p>
-          </li>
-          <li class="team-items">
-            <img
-              src="./images/camila-garcia.jpg"
-              alt="photo-Camila Garcia"
-              width="264"
-            />
-            <h3 class="card-title">Camila Garcia</h3>
-            <p class="article-text">Marketing</p>
-          </li>
-          <li class="team-items">
-            <img
-              src="./images/daniel-wilson.jpg"
-              alt="photo-Daniel Wilson"
-              width="264"
-            />
-            <h3 class="card-title">Daniel Wilson</h3>
-            <p class="article-text">UI Designer</p>
-          </li>
-        </ul>
+          <h2 class="team-title">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-items">
+              <img
+                src="./images/mark-guerrero.jpg"
+                alt="photo-Mark-Guerrero"
+                width="264"
+              />
+              <h3 class="card-title">Mark Guerrero</h3>
+              <p class="card-text">Product Designer</p>
+            </li>
+            <li class="team-items">
+              <img
+                src="./images/tom-ford.jpg"
+                alt="photo-tom-ford"
+                width="264"
+              />
+              <h3 class="card-title">Tom Ford</h3>
+              <p class="card-text">Frontend Developer</p>
+            </li>
+            <li class="team-items">
+              <img
+                src="./images/camila-garcia.jpg"
+                alt="photo-Camila Garcia"
+                width="264"
+              />
+              <h3 class="card-title">Camila Garcia</h3>
+              <p class="card-text">Marketing</p>
+            </li>
+            <li class="team-items">
+              <img
+                src="./images/daniel-wilson.jpg"
+                alt="photo-Daniel Wilson"
+                width="264"
+              />
+              <h3 class="card-title">Daniel Wilson</h3>
+              <p class="card-text">UI Designer</p>
+            </li>
+          </ul>
         </div>
-        
       </section>
     </main>
     <footer>
       <section class="footer-section">
         <div class="footer container">
-        <a href="./index.html" class="footer-logo"
-        >Web<span class="footer-logo-studio-color">Studio</span></a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-      </div>
+          <a href="./index.html" class="footer-logo"
+            >Web<span class="footer-logo-studio-color">Studio</span></a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
       </section>
     </footer>
   </body>
